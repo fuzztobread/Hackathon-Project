@@ -1,5 +1,16 @@
 from flask import Flask,render_template,request
 
-app = flask(__name__)
+app = Flask(__name__)
 
 @app.route("/",methods=["GET","POST"])
+
+
+def index():
+    if request.method == "GET":
+        pass
+    if request.method == "POST":
+        pass
+
+
+    return render_template("index.html")
+
